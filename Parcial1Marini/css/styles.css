@@ -1,0 +1,192 @@
+body{
+    background-color: lightblue;
+}
+
+table{
+    border-collapse: collapse;
+    width: 95%; /*No pongo el 100 para que se vea la sombra*/
+    box-shadow:  10px -8px 5px 1px rgba(0,0,0,1);/*Sombras*/
+    border: lightseagreen 5px solid;
+}
+th,td{
+    text-align: left;
+    padding: 8px;
+    cursor: pointer; /*Le paso el mouse y pone manito*/
+}
+
+tr:nth-child(even){background-color: whitesmoke;}
+
+th{
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+}
+
+.listaPersonas{
+
+    display: inline-block;
+    
+    }
+
+input[type=text],[type=date]{
+        width: 100%;
+        padding: 10px 18px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+ }   
+ 
+
+.stringName{
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+
+ .botonModificar{
+    width: 45%;
+    background-color:lightseagreen;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.sinError{
+    
+    border: 1px solid #cccccc;
+}
+
+.error{
+    
+    border: 1px solid red;
+
+}
+
+
+.botonEliminar{
+    width: 45%;
+    background-color:red;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.botonCerrar
+{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    margin: 4px 0px 4px 10px; 
+    cursor: pointer;/*paso la manita por arriba*/
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 12px;
+  
+}
+/*GIF*/
+.Cargando
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0.5;
+}
+
+
+.botonCerrar:hover{
+    background-color:lightcoral;
+}
+
+.botonEliminar:hover{
+    background-color:lightcoral;
+}
+
+.botonModificar:hover{
+    background-color:lightgreen;
+}
+
+.contenedoraflex{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.contenedorGrilla{
+    top: 135px;
+    position: absolute;
+    width: 30%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: none;
+    border: lightblue 5px solid;
+    
+}
+
+/*DIVS y CAJITA DE HERRAMIENTA */
+.relativePadre {
+    position: relative;
+    
+    position: fixed;
+    display: none;
+    bottom: 50%;
+    left: 50%;
+    width: 30rem;
+    height: auto;
+    border-radius: 15px;
+    background-color: grey;
+    border: solid green 5px;
+    align-items: flex-end;
+    
+    
+}
+.absolute {
+    position: absolute;
+    
+}
+/*Errores en campo name*/
+.conError{
+    border:1px solid red;
+    
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+        
+    
+    
+}
+.sinError{
+    border:1px solid green;
+     
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+        
+}

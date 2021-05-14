@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/funciones.js"> </script>
+    <title>Parcial 2021</title>
+</head>
+
+<body>
+
+    <h2 class="listaPersonas">Lista De Materias - Parcial1 2021 Marini Daniel</h2>
+    <div class="contenedoraflex">
+        <h3>Presionar 2 veces en la fila que desee. </h3> 
+        <div class="contenedorGrilla" id="contGrilla">
+               
+
+            <input class="botonCerrar" type="button" id="btnCerrar" value="x" onclick="cerrarGrilla();">
+            <br>
+            <h3>Modificar o Eliminar Registro.</h3> 
+            <label for="nombre">Nombre de la materia:</label>
+            <br>
+            <input type="string" maxlength="50" class="stringName" id="nombre" name="firstname" placeholder="nombre..." >
+            <br>
+            <label for="final">Fecha de Final</label>
+            <br>
+            <input type="date" id="final" name="date">
+            <br>
+            <label for="turno">Turno:</label>
+            <br>
+            <label for="turno">Mañana</label>
+            <input type="radio" id="Tmañana" name="turno" value="Mañana" checked>
+            <br>
+            <label for="turno">Noche</label>
+            <input type="radio" id="TNoche" name="turno" value="Noche">
+            <br>
+ 
+            <label for="cuatri">Cuatrimestre:</label> 
+
+            <select name="cuatrimestre" id="cuatri">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+
+            <input class="botonEliminar" type="button" id="btnEliminar" value="Eliminar">
+            <input class="botonModificar" type="button" id="btnModificar" value="Modificar">
+        </div>
+
+    </div>
+    <!---Div con GIFT-->
+    <div class="Cargando" id="Cargando">
+
+        <img src="img/Pokemon.gif">
+
+    </div>
+
+    <table id="tabla" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>Fecha de Final</th>
+                <th>Turno</th>
+
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+
+    </table>
+    <nav><!--- Link De Linkedin-->
+        <h1>Redes Sociales</h1>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/daniel-julio-marini-79979a176/">Linkedin</a></li>
+        </ul>
+    </nav>
+    
+</body>
+
+</html>
